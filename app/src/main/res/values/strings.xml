@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pick-A-Fish</string>
+
+
+    <string name="heading1">Welcome!</string>
+    <string name="heading2">App-on-the-go</string>
+    <string name="heading3">Add your recipe on your favorites</string>
+
+    <string name="desc1">Not sure about the fish you have caught?</string>
+    <string name="desc2">Pick-a-fish app lets you scan your fish everywhere you go.</string>
+    <string name="desc3">Pick-a-fish app can recommend a fish recipe if you are not familiar with it.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

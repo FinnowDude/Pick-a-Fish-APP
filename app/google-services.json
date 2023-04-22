@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294759499588",
+    "project_id": "pick-a-fish",
+    "storage_bucket": "pick-a-fish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294759499588:android:2609776766e55663c47911",
+        "android_client_info": {
+          "package_name": "com.example.pick_a_fish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294759499588-f116rqidvqkl9c9npvdrr017vrd5oben.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-sd3nrj_ID_sNTVvYYs-QdjBWgNi_o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294759499588-f116rqidvqkl9c9npvdrr017vrd5oben.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
