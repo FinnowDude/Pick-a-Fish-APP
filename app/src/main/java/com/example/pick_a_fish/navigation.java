@@ -97,8 +97,8 @@ public class navigation extends AppCompatActivity {
 
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.homeicon));
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.infoicon));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.recipe_icon));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.bookmark_icon));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.baseline_people_alt_24));
+      //  bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.bookmark_icon));
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
@@ -128,12 +128,12 @@ public class navigation extends AppCompatActivity {
                         fab.setVisibility(View.VISIBLE);
                         fragment = new recipe_fragment();
                         break;
-                    case 4:
+                    //case 4:
                         //Initialize Bookmark Fragment
                         //Get id 4
-                        fab.setVisibility(View.INVISIBLE);
-                        fragment = new bookmark_fragment();
-                        break;
+                        //fab.setVisibility(View.INVISIBLE);
+                        //fragment = new bookmark_fragment();
+                        //break;
                 }
                 loadFragment(fragment);
             }

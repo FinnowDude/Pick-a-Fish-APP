@@ -50,6 +50,7 @@ public class loginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent forgotActivit =new Intent(getApplicationContext(),forgot_password.class);
                 startActivity(forgotActivit);
+                finish();
 
 
             }
@@ -168,11 +169,6 @@ public class loginActivity extends AppCompatActivity {
 
 
         }
-
-
-
-
-
-
     }
+
 }
