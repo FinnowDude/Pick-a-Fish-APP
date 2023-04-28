@@ -6,20 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".register"
-    android:background="@color/lblue">
+    android:background="@drawable/bg">
 
   <ImageView
       android:id="@+id/imageView15"
       android:layout_width="418dp"
-      android:layout_height="642dp"
-      android:scaleType="centerCrop"
+      android:layout_height="500dp"
+      android:scaleType="fitXY"
       android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="1.0"
-      app:srcCompat="@drawable/reg_white" />
+      app:srcCompat="@drawable/rectaaa" />
 
   <TextView
       android:id="@+id/textView"
@@ -34,7 +34,7 @@
       app:layout_constraintHorizontal_bias="0.123"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.33" />
+      app:layout_constraintVertical_bias="0.355" />
 
   <ImageView
       android:id="@+id/user_photo"
@@ -139,18 +139,18 @@
       android:layout_height="52dp"
       android:background="@drawable/edit_text_border"
       android:ems="10"
-      android:textColor="@color/black"
-      android:textColorHint="@color/black"
       android:fontFamily="@font/dm_sans"
       android:hint="Name"
       android:inputType="textPersonName"
       android:paddingLeft="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.481"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.399" />
+      app:layout_constraintVertical_bias="0.422" />
 
   <ProgressBar
       android:id="@+id/regprogressBar"

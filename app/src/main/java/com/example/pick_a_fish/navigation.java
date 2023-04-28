@@ -47,7 +47,7 @@ public class navigation extends AppCompatActivity {
     Dialog popAddpost;
 
     ImageView popupUserImage, popupPostImage,popupAddbtn;
-    TextView popupTitle,popupDescription;
+    TextView popupTitle,popupDescription,nav_name;
     ProgressBar popupClickProgress;
 
     private static final int PReqcode = 2;
@@ -79,7 +79,7 @@ public class navigation extends AppCompatActivity {
         setupPopupImageClick();
 
 
-
+        nav_name = findViewById(R.id.txtFname);
 
 
         FloatingActionButton fab = findViewById(R.id.floatingActionButton);
@@ -110,18 +110,21 @@ public class navigation extends AppCompatActivity {
                     case 1:
                         //Initialize Home Fragment
                         //Get id 1
+                        nav_name.setText("HOME");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new home_fragment();
                         break;
                     case 2:
                         //Initialize Information Fragment
                         //Get id 2
+                        nav_name.setText("Fish Informations");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new information_fragment();
                         break;
                     case 3:
                         //Initialize Recipe Fragment
                         //Get id 3
+                        nav_name.setText("Forum");
                         fab.setVisibility(View.VISIBLE);
                         fragment = new recipe_fragment();
                         break;

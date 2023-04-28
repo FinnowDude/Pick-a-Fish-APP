@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class loginActivity extends AppCompatActivity {
 
 
-    TextView regTxt;
+    TextView regTxt,forgottxt,closetxt;
     private EditText userMail, userPassword;
     private Button btnLogin;
     private ProgressBar loginProgress;
@@ -32,6 +32,31 @@ public class loginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
+
+        //Exit App
+        closetxt = findViewById(R.id.closeTXT);
+        closetxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        //Forgot Password Activity
+
+        forgottxt = findViewById(R.id.txtforgot);
+        forgottxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forgotActivit =new Intent(getApplicationContext(),forgot_password.class);
+                startActivity(forgotActivit);
+
+
+            }
+        });
+
+
+
 
         //Go to Sign up Activity--------------------------------------------------------------------
         regTxt = findViewById(R.id.txtRegis);
