@@ -46,7 +46,7 @@ public class navigation extends AppCompatActivity {
     FirebaseAuth mAuth;
     Dialog popAddpost;
 
-    ImageView popupUserImage, popupPostImage,popupAddbtn,profile_img_home;
+    ImageView popupUserImage, popupPostImage,popupAddbtn,profile_img_home, img_bg_nav;
     TextView popupTitle,popupDescription,nav_name;
     ProgressBar popupClickProgress;
 
@@ -86,6 +86,8 @@ public class navigation extends AppCompatActivity {
         });
 
 
+        img_bg_nav = findViewById(R.id.nav_img_bg);
+
 
 
         //Add or Create a Post
@@ -102,7 +104,7 @@ public class navigation extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Clicked",Toast.LENGTH_LONG).show();
+
                 popAddpost.show();
             }
         });
@@ -125,6 +127,8 @@ public class navigation extends AppCompatActivity {
                     case 1:
                         //Initialize Home Fragment
                         //Get id 1
+
+                        img_bg_nav.setImageResource(R.drawable.layout_corners);
                         nav_name.setText("HOME");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new home_fragment();
@@ -132,13 +136,16 @@ public class navigation extends AppCompatActivity {
                     case 2:
                         //Initialize Information Fragment
                         //Get id 2
+                        img_bg_nav.setImageResource(R.drawable.layout_corners);
                         nav_name.setText("Fish Informations");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new information_fragment();
                         break;
                     case 3:
                         //Initialize Recipe Fragment
-                        //Get id 3
+                        //Get id
+
+                        img_bg_nav.setImageResource(R.color.white);
                         nav_name.setText("Forum");
                         fab.setVisibility(View.VISIBLE);
                         fragment = new recipe_fragment();

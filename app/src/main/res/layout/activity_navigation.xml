@@ -40,19 +40,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.865"
         app:srcCompat="@drawable/baseline_create_24" />
+
+    <ImageView
+        android:id="@+id/nav_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/layout_corners" />
+
     <FrameLayout
 
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="600dp"
         android:layout_weight="1"
-        android:background="@drawable/layout_corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" >
+        app:layout_constraintVertical_bias="1.0">
 
     </FrameLayout>
 
@@ -97,6 +108,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
