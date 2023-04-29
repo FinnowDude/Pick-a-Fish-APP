@@ -115,10 +115,8 @@
 
         <Button
             android:id="@+id/post_detail_add_comment_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:background="@drawable/edittext_button_style_rounded"
             android:text="Add"
             android:textColor="@color/black"
@@ -143,7 +141,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text=""
+            android:text="|"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"

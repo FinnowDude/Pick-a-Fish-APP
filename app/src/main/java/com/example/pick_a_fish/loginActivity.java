@@ -171,4 +171,8 @@ public class loginActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 }

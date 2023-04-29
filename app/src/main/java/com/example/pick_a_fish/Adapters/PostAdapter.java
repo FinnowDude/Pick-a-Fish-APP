@@ -66,6 +66,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             imgPostProfile = itemView.findViewById(R.id.row_post_profile_img);
 
 
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

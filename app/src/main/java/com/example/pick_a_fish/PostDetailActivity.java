@@ -19,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.pick_a_fish.Adapters.CommentAdapter;
 import com.example.pick_a_fish.Modals.Comment;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -100,23 +99,24 @@ public class PostDetailActivity extends AppCompatActivity {
                 String uimg = firebaseUser.getPhotoUrl().toString();
                 Comment comment = new Comment(comment_content,uid,uimg,uname);
 
-                commentReference.setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        showMessage("Comment Added");
-                        editTextComment.setText("");
-                        btnAddComment.setVisibility(View.VISIBLE);
+                if(editTextComment.getText().toString().isEmpty()){
 
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
+                    showMessage("Please type in the Comment");
+                    btnAddComment.setVisibility(View.VISIBLE);
 
-                        showMessage("Failed to add comment : " + e.getMessage());
+                }else{
+                    commentReference.setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            showMessage("Comment Added");
+                            editTextComment.setText("");
+                            btnAddComment.setVisibility(View.VISIBLE);
 
+                        }
+                    });
 
-                    }
-                });
+                }
+
 
 
 
@@ -127,6 +127,7 @@ public class PostDetailActivity extends AppCompatActivity {
 
         String postImage = getIntent().getExtras().getString("postImage");
         Glide.with(this).load(postImage).into(imgPost);
+
 
         String postTitle=getIntent().getExtras().getString("title");
         txtPostTitle.setText(postTitle);

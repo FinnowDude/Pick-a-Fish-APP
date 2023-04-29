@@ -46,7 +46,7 @@ public class navigation extends AppCompatActivity {
     FirebaseAuth mAuth;
     Dialog popAddpost;
 
-    ImageView popupUserImage, popupPostImage,popupAddbtn;
+    ImageView popupUserImage, popupPostImage,popupAddbtn,profile_img_home;
     TextView popupTitle,popupDescription,nav_name;
     ProgressBar popupClickProgress;
 
@@ -69,6 +69,21 @@ public class navigation extends AppCompatActivity {
 
 
 
+        //Activity Profile When click profile image
+
+
+
+        profile_img_home = findViewById(R.id.profile_img2);
+        profile_img_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent profileActivity = (new Intent(getApplicationContext(), profile_activity.class));
+                startActivity(profileActivity);
+
+
+            }
+        });
 
 
 
@@ -243,6 +258,7 @@ public class navigation extends AppCompatActivity {
         // load user current profile photo
 
         Glide.with(navigation.this).load(currentUser.getPhotoUrl()).into(popupUserImage);
+        Glide.with(navigation.this).load(currentUser.getPhotoUrl()).into(profile_img_home);
 
 
 

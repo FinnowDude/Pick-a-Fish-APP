@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dm_sans"
-        android:text="Pick-A-Fish"
+        android:text="Pick A Fish"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"

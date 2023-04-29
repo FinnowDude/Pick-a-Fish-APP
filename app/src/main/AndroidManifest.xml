@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".profile_activity"
+            android:exported="false" />
+        <activity
             android:name=".forgot_password"
             android:exported="false" />
         <activity
