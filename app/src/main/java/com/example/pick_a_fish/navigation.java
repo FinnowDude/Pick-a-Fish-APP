@@ -3,9 +3,11 @@ package com.example.pick_a_fish;
 import android.Manifest;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -26,6 +28,7 @@ import androidx.fragment.app.Fragment;
 import com.bumptech.glide.Glide;
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.pick_a_fish.Modals.Post;
+import com.example.pick_a_fish.Utiliy.NetworkChangeListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -53,6 +56,7 @@ public class navigation extends AppCompatActivity {
     private static final int PReqcode = 2;
     private static final int REQUESCODE = 2;
     private Uri pickedImgUri = null;
+    NetworkChangeListener networkChangeListener = new NetworkChangeListener();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,10 +72,10 @@ public class navigation extends AppCompatActivity {
 
 
 
+        //Check internet Connection
+
 
         //Activity Profile When click profile image
-
-
 
         profile_img_home = findViewById(R.id.profile_img2);
         profile_img_home.setOnClickListener(new View.OnClickListener() {
@@ -376,5 +380,21 @@ public class navigation extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(networkChangeListener, filter);
+        super.onStart();
+    }
+
+
+    @Override
+    protected void onStop() {
+        unregisterReceiver(networkChangeListener);
+
+
+
+        super.onStop();
+    }
 }
 
