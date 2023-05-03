@@ -271,4 +271,9 @@ public class register extends AppCompatActivity {
 
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

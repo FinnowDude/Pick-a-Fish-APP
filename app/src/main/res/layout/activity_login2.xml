@@ -23,20 +23,22 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="287dp"
-        android:layout_height="257dp"
-        android:layout_marginBottom="548dp"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
 
-        android:scaleType="centerCrop"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/whale" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_transparent" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:hint="Email"
@@ -48,8 +50,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextTextPassword3"
@@ -73,16 +75,17 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/dm_sans_bold"
         android:text="S I G N  I N"
         android:textColor="@color/teal_300"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965" />
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtforgot"
