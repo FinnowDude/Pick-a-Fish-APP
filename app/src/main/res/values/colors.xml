@@ -17,4 +17,5 @@
     <color name="colorOnPrimaryLightDemo">#EEE3AB</color>
     <color name="colorAccentDemo">#665815</color>
     <color name="grey">#4E5355</color>
+    <color name="red">#DC2525</color>
 </resources>

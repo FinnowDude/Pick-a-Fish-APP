@@ -4,12 +4,85 @@
 
     <string name="heading1">Welcome!</string>
     <string name="heading2">App-on-the-go</string>
-    <string name="heading3">Add your recipe on your favorites</string>
+    <string name="heading3">Caught something fishy</string>
 
     <string name="desc1">Not sure about the fish you have caught?</string>
     <string name="desc2">Pick-a-fish app lets you scan your fish everywhere you go.</string>
-    <string name="desc3">Pick-a-fish app can recommend a fish recipe if you are not familiar with it.</string>
+    <string name="desc3">Pick-a-fish app lets you share your caught fish to everyone.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- FISHES INFORMATIONS -->
+
+    <!-- BANGUS -->
+    <string name="sSN1">(Chanos chanos)</string>
+    <string name="sCN1">Bangus (Bikol, Cebuano, Bolinao, Davawenyo, Ilokano, Tagalog)</string>
+    <string name="sEN1">Milkfish</string>
+    <string name="sENVI1">Marine; Freshwater; Brackish; Benthopelagic</string>
+    <string name="sDESC1">This species has an elongated, compressed body with a small, toothless mouth, a single mid-level dorsal fin, falcate pectoral fins, a large, deeply forked caudal fin, and no scutes on the belly. It has 4 branchiostegal rays and is colored olive green dorsally and silvery on the flanks, with dark margins on its unpaired fins.</string>
+
+    <!-- BOLINAO -->
+    <string name="sSN2">(Stolephorus waitei)</string>
+    <string name="sCN2">Bolinao (Tagalog,Cebuano, Bikol,Davawenyo)</string>
+    <string name="sEN2">Rabbitfish/Spinefoot</string>
+    <string name="sENVI2">Marine, freshwater, brackish, pelagic-neritic</string>
+    <string name="sDESC2">This species is identifiable by its pointed maxilla tip, which reaches the hind border of the pre-operculum, and a convex, rounded pre-operculum. The pelvic fin tips rarely reach below the dorsal fin origin. It is characterized by numerous black spots below the eye level and on the lower jaw tip, as well as a dark patch behind the occiput.</string>
+
+    <!-- DALAGANG BUKID -->
+    <string name="sSN3">(Goldband fusilier)</string>
+    <string name="sCN3">Dalagang bukid (tagalog, Cebuano, bikol)</string>
+    <string name="sEN3">Goldband fusilier</string>
+    <string name="sENVI3">Marine, Reef-associated, Non-migratory</string>
+    <string name="sDESC3">The gold-band fusilier also known as the yellow-band fusilier or black-tipped fusilier, is a species of marine ray-finned fish, a fusilier belonging to the family Caesionidae. It is widespread around reefs in the Indo-West Pacific region.</string>
+
+    <!-- GALUNGGONG -->
+    <string name="sSN4">(Decapterus russelli)</string>
+    <string name="sCN4">Galunggong (tagalog, Cebuano)</string>
+    <string name="sEN4">Indian scad</string>
+    <string name="sENVI4">Marine, Benthopelagic</string>
+    <string name="sDESC4">Adults dwell from middle to benthic, forming large schools in deep water, but occasionally inshore in sheltered bays in small to large groups. The most common Decapterus in coastal waters and on open banks of the Indian Ocean. They feed mainly on smaller planktonic invertebrates. Generally marketed fresh, may be dried or salted. Also sold frozen and canned.</string>
+
+    <!-- HASA HASA -->
+    <string name="sSN5">(Rastrelliger brachysoma)</string>
+    <string name="sCN5">Hasa-hasa (Tagalog, Cebuano, Ilokano)</string>
+    <string name="sEN5">Short mackerel</string>
+    <string name="sENVI5">Marine, brackish, pelagic-neretic, oceanodromous</string>
+    <string name="sDESC5">This species is distinguished by its deep body, head, and long gill rakers. It has a swim bladder, 31 vertebrae, a single small interpelvic process, and a rudimentary anal spine. It also has numerous bristles on the longest gill raker, ranging from 150 to 240 on one side depending on the specimens size.</string>
+
+    <!-- MAYA MAYA -->
+    <string name="sSN6">(Lutjanus rufolineatus)</string>
+    <string name="sCN6">Maya-maya (tagalog, Cebuano, Kapampangan)</string>
+    <string name="sEN6">Yellow-lines snapper</string>
+    <string name="sENVI6">Marine, Reef-associated</string>
+    <string name="sDESC6">This fish has a firm flesh and neutral taste, and is ideal for soup, sauce, or steamed. It swims above the reef in aggregations, feeding on fishes, shrimps, crabs, cephalopods, and planktonic items. Caught fresh with hand lines and bottom longlines.</string>
+
+    <!-- SAPSAP -->
+    <string name="sSN7">(Photopectoralis bindus)</string>
+    <string name="sCN7">Sapsap (Cebuano, Tagalog, Bikol)</string>
+    <string name="sEN7">Orangefin Ponyfish</string>
+    <string name="sENVI7">Marine, Brackish, Demersal, Amphidromous</string>
+    <string name="sDESC7">Indo-West Pacific: Port Sudan in the Red Sea and the Persian Gulf to Japan, the Arafura Sea, and Australia. Found over muddy sand bottoms of coastal inshore waters. Often enters estuaries. Forms schools. Used in Chinese medicine.</string>
+
+    <!-- TAMBAN -->
+    <string name="sSN8">(Thryssa setirostris)</string>
+    <string name="sCN8">Tamban (tagalog, ilokano, Cebuano)</string>
+    <string name="sEN8">Longjaw thryssa</string>
+    <string name="sENVI8">Marine, Brackish, Pelagic-neritic</string>
+    <string name="sDESC8">The Trinity Inlet system, Australia, has recorded a temperature range of 26.0-29.0 °C, where it feeds on crustaceans such as amphipods, zoea larvae, and Acetes. It is used as bait in the tuna fishery in the South Pacific.</string>
+
+    <!-- TILAPIA -->
+    <string name="sSN9">(Oreoechromis niloticus)</string>
+    <string name="sCN9">Tilapia (Tagalog, English)</string>
+    <string name="sEN9">Nile tilapia</string>
+    <string name="sENVI9">Freshwater, Brackish,Benthopelagic, Potamodromous</string>
+    <string name="sDESC9">Tilapia are a hardy, fast growing fish that can live up to ten years and reach ten pounds. They are shaped like a sunfish or crappie and have long dorsal fins with spines in the pelvic and anal fins. They have wide vertical bars of dark coloration on the sides of fry, fingerlings, and adults.</string>
+
+    <!-- TULINGAN -->
+    <string name="sSN10">(Auxis rochei)</string>
+    <string name="sCN10">Tulingan (Cebuano, Tagalog, Maranao)</string>
+    <string name="sEN10">Mackerel Tuna</string>
+    <string name="sENVI10">Marine; Brackish; Pelagic-neritic</string>
+    <string name="sDESC10">The most important details are the back, scaleless area, belly, pectoral and pelvic fins, body, teeth, pectoral fins, interpelvic process, corselet, and central keel. The body is robust, elongate and rounded, with small and conical teeth, pectoral fins short, and a strong central keel on each side of the caudal-fin base between 2 smaller keels.</string>
+    
+    
 </resources>

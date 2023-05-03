@@ -32,8 +32,8 @@ import java.nio.ByteOrder;
 public class scan_camera extends AppCompatActivity {
 
     Button scan_images, gallery_image;
-    ImageView scanned_image, img_info,img_back;
-    TextView result_txt, result_txt2;
+    ImageView scanned_image, img_info, img_back;
+    TextView result_txt, txt_SN, txt_CN, txt_EN, txt_ENVI, txt_DESC;
     Dialog mDialog;
     int imageSize = 224;
 
@@ -46,16 +46,23 @@ public class scan_camera extends AppCompatActivity {
         gallery_image = findViewById(R.id.gallery_btn);
         scanned_image = findViewById(R.id.scan_img);
         result_txt = findViewById(R.id.resultTxt);
-        result_txt2 = findViewById(R.id.resultTxt2);
         img_info = findViewById(R.id.info_img);
         img_back = findViewById(R.id.back_img);
+
+        //fish INFO CALL
+
+        txt_SN = findViewById(R.id.txtSN);
+        txt_CN = findViewById(R.id.txtCN);
+        txt_EN = findViewById(R.id.txtEN);
+        txt_ENVI = findViewById(R.id.txtENVI);
+        txt_DESC = findViewById(R.id.txtDESC);
 
         //Back to Navigation Activity
 
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(scan_camera.this,navigation.class);
+                Intent intent = new Intent(scan_camera.this, navigation.class);
                 startActivity(intent);
                 finish();
 
@@ -78,7 +85,7 @@ public class scan_camera extends AppCompatActivity {
         } else {
 
             SharedPreferences.Editor editor = preferences.edit();
-            editor.putString("FirstTimeInstall","Yes");
+            editor.putString("FirstTimeInstall", "Yes");
             editor.apply();
 
 
@@ -182,15 +189,114 @@ public class scan_camera extends AppCompatActivity {
 
             if (mxconfi >= 70) {
 
-                String str = Float.toString(mxconfi);
-                result_txt.setText(classes[maxPos]);
-                result_txt2.setText(str);
 
+
+                result_txt.setText(classes[maxPos]);
+                result_txt.setTextColor(Color.parseColor("#FFFFFF"));
+
+                if(result_txt.getText() == "Bangus"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN1));
+                    txt_CN.setText(getResources().getString(R.string.sCN1));
+                    txt_EN.setText(getResources().getString(R.string.sEN1));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI1));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC1));
+
+                }
+
+                if(result_txt.getText() == "Bolinao"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN2));
+                    txt_CN.setText(getResources().getString(R.string.sCN2));
+                    txt_EN.setText(getResources().getString(R.string.sEN2));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI2));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC2));
+
+                }
+
+                if(result_txt.getText() == "Dalagang Bukid"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN3));
+                    txt_CN.setText(getResources().getString(R.string.sCN3));
+                    txt_EN.setText(getResources().getString(R.string.sEN3));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI3));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC3));
+
+                }
+                if(result_txt.getText() == "Galunggong"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN4));
+                    txt_CN.setText(getResources().getString(R.string.sCN4));
+                    txt_EN.setText(getResources().getString(R.string.sEN4));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI4));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC4));
+
+                }
+                if(result_txt.getText() == "Hasa hasa"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN5));
+                    txt_CN.setText(getResources().getString(R.string.sCN5));
+                    txt_EN.setText(getResources().getString(R.string.sEN5));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI5));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC5));
+
+                }
+                if(result_txt.getText() == "Maya maya"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN6));
+                    txt_CN.setText(getResources().getString(R.string.sCN6));
+                    txt_EN.setText(getResources().getString(R.string.sEN6));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI6));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC6));
+
+                }
+                if(result_txt.getText() == "Sapsap"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN7));
+                    txt_CN.setText(getResources().getString(R.string.sCN7));
+                    txt_EN.setText(getResources().getString(R.string.sEN7));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI7));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC7));
+
+                }
+                if(result_txt.getText() == "Tamban"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN8));
+                    txt_CN.setText(getResources().getString(R.string.sCN8));
+                    txt_EN.setText(getResources().getString(R.string.sEN8));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI8));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC8));
+
+                }
+                if(result_txt.getText() == "Tilapia"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN9));
+                    txt_CN.setText(getResources().getString(R.string.sCN9));
+                    txt_EN.setText(getResources().getString(R.string.sEN9));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI9));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC9));
+
+                }
+                if(result_txt.getText() == "Tulingan"){
+
+                    txt_SN.setText(getResources().getString(R.string.sSN10));
+                    txt_CN.setText(getResources().getString(R.string.sCN10));
+                    txt_EN.setText(getResources().getString(R.string.sEN10));
+                    txt_ENVI.setText(getResources().getString(R.string.sENVI10));
+                    txt_DESC.setText(getResources().getString(R.string.sDESC10));
+
+                }
 
             } else {
-                String str = Float.toString(mxconfi);
+
+                result_txt.setTextColor(Color.parseColor("#DC2525"));
                 result_txt.setText("Couldn't Identify");
-                result_txt2.setText(str);
+                txt_CN.setText("");
+                txt_SN.setText("Scientific Name");
+                txt_EN.setText("");
+                txt_ENVI.setText("");
+                txt_DESC.setText("");
+
             }
 
 
