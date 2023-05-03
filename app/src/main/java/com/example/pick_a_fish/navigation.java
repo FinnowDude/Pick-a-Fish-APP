@@ -133,7 +133,7 @@ public class navigation extends AppCompatActivity {
                         //Get id 1
 
                         img_bg_nav.setImageResource(R.drawable.layout_corners);
-                        nav_name.setText("HOME");
+                        nav_name.setText("Home");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new home_fragment();
                         break;
@@ -141,7 +141,7 @@ public class navigation extends AppCompatActivity {
                         //Initialize Information Fragment
                         //Get id 2
                         img_bg_nav.setImageResource(R.drawable.layout_corners);
-                        nav_name.setText("Fish Informations");
+                        nav_name.setText("Fish Information");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new information_fragment();
                         break;

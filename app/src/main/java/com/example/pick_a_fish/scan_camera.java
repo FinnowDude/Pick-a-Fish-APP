@@ -1,9 +1,13 @@
 package com.example.pick_a_fish;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,8 +32,9 @@ import java.nio.ByteOrder;
 public class scan_camera extends AppCompatActivity {
 
     Button scan_images, gallery_image;
-    ImageView scanned_image;
-    TextView result_txt,result_txt2;
+    ImageView scanned_image, img_info,img_back;
+    TextView result_txt, result_txt2;
+    Dialog mDialog;
     int imageSize = 224;
 
     @Override
@@ -42,6 +47,56 @@ public class scan_camera extends AppCompatActivity {
         scanned_image = findViewById(R.id.scan_img);
         result_txt = findViewById(R.id.resultTxt);
         result_txt2 = findViewById(R.id.resultTxt2);
+        img_info = findViewById(R.id.info_img);
+        img_back = findViewById(R.id.back_img);
+
+        //Back to Navigation Activity
+
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(scan_camera.this,navigation.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
+        //Info Dialog/Modal Popup
+        mDialog = new Dialog(this);
+
+        SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
+        String FirstTime = preferences.getString("FirstTimeInstall", "");
+
+        if (FirstTime.equals("Yes")) {
+
+            mDialog.setContentView(R.layout.tip_scanimage);
+            mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            mDialog.show();
+
+
+        } else {
+
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("FirstTimeInstall","Yes");
+            editor.apply();
+
+
+        }
+
+
+        img_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mDialog.setContentView(R.layout.tip_scanimage);
+                mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                mDialog.show();
+
+
+            }
+        });
+
 
         //Take photo - Camera Open
         scan_images.setOnClickListener(new View.OnClickListener() {
@@ -51,9 +106,11 @@ public class scan_camera extends AppCompatActivity {
                 if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, 3);
+                    scanned_image.setVisibility(View.VISIBLE);
 
                 } else {
                     requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
+                    scanned_image.setVisibility(View.INVISIBLE);
 
                 }
 
@@ -67,10 +124,9 @@ public class scan_camera extends AppCompatActivity {
             public void onClick(View view) {
                 Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(cameraIntent, 1);
+                scanned_image.setVisibility(View.VISIBLE);
             }
         });
-
-
 
 
     }
@@ -110,13 +166,13 @@ public class scan_camera extends AppCompatActivity {
             //find the index of the class with the highest confidence
             int maxPos = 0;
             float maxConfidence = 0;
-            for (int i = 0; i < confidence.length; i++){
-                if(confidence[i] > maxConfidence){
+            for (int i = 0; i < confidence.length; i++) {
+                if (confidence[i] > maxConfidence) {
                     maxConfidence = confidence[i];
                     maxPos = i;
                 }
             }
-            String [] classes = {"Bangus","Bolinao","Dalagang Bukid","Galunggong","Hasa hasa","Maya maya","Sapsap","Tamban","Tilapia","Tulingan"};
+            String[] classes = {"Bangus", "Bolinao", "Dalagang Bukid", "Galunggong", "Hasa hasa", "Maya maya", "Sapsap", "Tamban", "Tilapia", "Tulingan"};
 
 
             float mxconfi = 0;
@@ -124,14 +180,14 @@ public class scan_camera extends AppCompatActivity {
             mxconfi = maxConfidence * 100;
 
 
-            if(mxconfi >= 70){
+            if (mxconfi >= 70) {
 
                 String str = Float.toString(mxconfi);
                 result_txt.setText(classes[maxPos]);
                 result_txt2.setText(str);
 
 
-            }else{
+            } else {
                 String str = Float.toString(mxconfi);
                 result_txt.setText("Couldn't Identify");
                 result_txt2.setText(str);
@@ -150,8 +206,8 @@ public class scan_camera extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
-        if(resultCode == RESULT_OK){
-            if(requestCode == 3){
+        if (resultCode == RESULT_OK) {
+            if (requestCode == 3) {
                 Bitmap image = (Bitmap) data.getExtras().get("data");
                 int dimension = Math.min(image.getWidth(), image.getHeight());
                 image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
@@ -159,7 +215,7 @@ public class scan_camera extends AppCompatActivity {
 
                 image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
                 classifyImage(image);
-            }else{
+            } else {
                 Uri dat = data.getData();
                 Bitmap image = null;
                 try {

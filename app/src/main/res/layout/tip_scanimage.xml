@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="321dp"
+    android:layout_height="343dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg">
+
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/bulb"
+        android:paddingTop="15sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/imageView32"
+        android:text="BEFORE YOU SCAN \nTHE FISH"
+        android:paddingTop="18sp"
+        android:textSize="16sp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:textColor="@color/llblue" />
+
+    <TextView
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:textSize="14sp"
+        android:paddingTop="18sp"
+        android:fontFamily="@font/dm_sans"
+        android:text="1. Make sure the fish is in the center of  the image without being cropped so that it can be detected correctly.
+                        \n
+                        \n2. Only one object image can be scanned by the application.
+                        "
+        android:justificationMode="inter_word"
+        android:layout_below="@id/textView3"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView5"
+        android:textSize="16sp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:paddingTop="10sp"
+        android:gravity="center"
+
+        android:text="Tap outside to close this window."
+        android:layout_below="@id/textView4"
+        android:textColor="@color/black"
+        />
+
+
+
+
+</RelativeLayout>

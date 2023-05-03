@@ -11,9 +11,10 @@
     <color name="lblue">#0078AD</color>
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
-    
+    <color name="llblue">#007BB2</color>
     <color name="colorOnPrimaryDemo">#fff</color>
     <color name="colorPrimaryDemo">#554911</color>
     <color name="colorOnPrimaryLightDemo">#EEE3AB</color>
     <color name="colorAccentDemo">#665815</color>
+    <color name="grey">#4E5355</color>
 </resources>
