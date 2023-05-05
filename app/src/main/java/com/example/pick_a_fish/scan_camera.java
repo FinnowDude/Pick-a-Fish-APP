@@ -179,17 +179,14 @@ public class scan_camera extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Bangus", "Bolinao", "Dalagang Bukid", "Galunggong", "Hasa hasa", "Maya maya", "Sapsap", "Tamban", "Tilapia", "Tulingan"};
+            String[] classes = {"Bangus", "Bolinao", "Dalagang Bukid", "Galunggong", "Hasa hasa", "Maya maya", "Sapsap", "Tamban", "Tilapia", "Tulingan","Unknown"};
 
 
             float mxconfi = 0;
 
             mxconfi = maxConfidence * 100;
 
-
             if (mxconfi >= 70) {
-
-
 
                 result_txt.setText(classes[maxPos]);
                 result_txt.setTextColor(Color.parseColor("#FFFFFF"));
