@@ -2,6 +2,7 @@ package com.example.pick_a_fish.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,9 @@ import com.example.pick_a_fish.Modals.Post;
 import com.example.pick_a_fish.PostDetailActivity;
 import com.example.pick_a_fish.R;
 
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> {
 
@@ -42,6 +45,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         holder.tvTitle.setText(mData.get(position).getTitle());
         Glide.with(mContext).load(mData.get(position).getPicture()).into(holder.imgPost);
         Glide.with(mContext).load(mData.get(position).getUserPhoto()).into(holder.imgPostProfile);
+        holder.tvDate.setText(timeStampToString((long)mData.get(position).getTimeStamp()));
 
     }
 
@@ -52,7 +56,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
 
     public  class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tvTitle;
+        TextView tvTitle,tvDate;
         ImageView imgPost;
         ImageView imgPostProfile;
 
@@ -64,6 +68,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             tvTitle = itemView.findViewById(R.id.row_post_title);
             imgPost = itemView.findViewById(R.id.row_post_img);
             imgPostProfile = itemView.findViewById(R.id.row_post_profile_img);
+            tvDate = itemView.findViewById(R.id.row_post_date);
 
 
 
@@ -98,4 +103,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
 
     }
 
+
+    private  String timeStampToString(long time){
+
+        Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
+        calendar.setTimeInMillis(time);
+        String date = DateFormat.format("dd-MM-yy",calendar).toString();
+        return date;
+
+    }
 }

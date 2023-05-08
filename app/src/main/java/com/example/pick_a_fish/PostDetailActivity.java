@@ -146,7 +146,7 @@ public class PostDetailActivity extends AppCompatActivity {
         // get post id
         PostKey = getIntent().getExtras().getString("postKey");
 
-        String date= timeStampToString(getIntent().getExtras().getLong("postDate"));
+        String date = timeStampToString(getIntent().getExtras().getLong("postDate"));
         txtPostDateName.setText(date);
 
 
