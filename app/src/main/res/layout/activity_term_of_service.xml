@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".term_of_service"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/box_profile_blue_header" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Terms of Service"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+            app:layout_constraintEnd_toEndOf="@+id/imageView29"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView29"
+            app:layout_constraintTop_toTopOf="@+id/imageView29"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textColor="@color/white"
+
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to our Pick-a-fish app! In order to use our mobile application, you must agree to our terms of service. Please read these terms carefully before using our application."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView29"
+            android:fontFamily="@font/dm_sans_bold"
+            android:padding="20dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="1. Acceptance of Terms\n\nBy accessing and using our mobile application, you agree to be bound by these terms of service. If you do not agree to these terms, you should not use our mobile application.
+            \n\n2. License\n\nWe grant you a limited, non-exclusive, non-transferable, revocable license to use our mobile application for your personal use only. You may not use our mobile application for any commercial purpose without our prior written consent.
+\n\n3. User Content\n\nYou are solely responsible for any content that you upload, post, transmit or otherwise make available through our mobile application. By uploading, posting, transmitting or otherwise making available any content, you grant us a non-exclusive, worldwide, royalty-free, perpetual, irrevocable and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform and display such content in any media.
+\n\n4. Privacy\n\nWe take your privacy seriously and we are committed to protecting your personal information. Please refer to our privacy policy for more information.
+\n\n5. Intellectual Property\n\nOur mobile application, including all content and software, is protected by copyright, trademark, and other laws. You may not copy, modify, distribute, sell, or lease any part of our mobile application or included software, nor may you reverse engineer or attempt to extract the source code of that software, unless applicable laws prohibit these restrictions or you have our written permission.
+\n\n6. Disclaimer of Warranties\n\nOur mobile application is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We make no representations or warranties of any kind, express or implied, as to the operation of our mobile application or the information, content, materials, or products included on our mobile application. You expressly agree that your use of our mobile application is at your sole risk.\n\n
+7. Limitation of Liability\n\nWe will not be liable for any damages of any kind arising from the use of our mobile application, including but not limited to direct, indirect, incidental, punitive, and consequential damages.\n\n
+8. Indemnification\n\nYou agree to indemnify and hold us harmless from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees arising from your use of our mobile application or your violation of these terms of service.\n\n
+9. Modification of Terms\n\nWe reserve the right to modify these terms of service at any time. Your continued use of our mobile application after any such modifications shall constitute your acceptance of these modified terms.\n\n
+10. Governing Law\n\nThese terms of service shall be governed by and construed in accordance with the laws of Philippines.\n\n
+11. Contact Us\n\nIf you have any questions about these terms of service, please contact us at marielle.sangalang@cvsu.edu.ph."
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            android:paddingBottom="20dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

@@ -15,8 +15,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class profile_activity extends AppCompatActivity {
 
     ImageView image_profile;
-    TextView profileNametxt, profileEmailtxt;
-    ImageView logout_arrow;
+    TextView profileNametxt, profileEmailtxt,logout_txt,bugged_txt,term_txt;
+
 
     FirebaseUser currentUser;
     FirebaseAuth mAuth;
@@ -37,7 +37,32 @@ public class profile_activity extends AppCompatActivity {
         image_profile = findViewById(R.id.profile_image);
         profileNametxt = findViewById(R.id.profile_name);
         profileEmailtxt = findViewById(R.id.profile_email);
-        logout_arrow = findViewById(R.id.logout_img);
+
+        bugged_txt = findViewById(R.id.txt_bugged);
+        logout_txt = findViewById(R.id.txt_signout);
+        term_txt = findViewById(R.id.txt_term);
+
+
+        //Bug report Activity onClick
+
+        bugged_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), bug_report.class);
+                startActivity(intent);
+            }
+        });
+
+        //Term of Service Activity onClick
+
+        term_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), term_of_service.class);
+                startActivity(intent);
+
+            }
+        });
 
         // Displaying User Profile
 
@@ -47,7 +72,7 @@ public class profile_activity extends AppCompatActivity {
         Glide.with(this).load(currentUser.getPhotoUrl()).into(image_profile);
 
         //Logout Account
-        logout_arrow.setOnClickListener(new View.OnClickListener() {
+        logout_txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

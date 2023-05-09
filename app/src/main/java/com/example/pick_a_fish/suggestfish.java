@@ -14,7 +14,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.text.TextUtils;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -57,18 +56,15 @@ public class suggestfish extends AppCompatActivity {
         imgGallery = findViewById(R.id.imageView11);
         imgView = findViewById(R.id.imageView3);
         btnUpload = findViewById(R.id.btnUpload);
-        txtfFishes = findViewById(R.id.txtfUpload);
+
 
 
         btnUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(TextUtils.isEmpty(txtfFishes.getText().toString())){
-                    txtfFishes.setError("Fish Name Needed.");
 
-                }else{
                 UploadImage();
-                }
+
             }
         });
         // FireBase
