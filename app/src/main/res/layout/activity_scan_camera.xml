@@ -83,11 +83,11 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/custom_btn4"
         android:fontFamily="@font/dm_sans_bold"
-        android:paddingLeft="50dp"
+        android:paddingLeft="40dp"
         android:text="Scan"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -123,7 +123,7 @@
         android:id="@+id/gallery_btn2"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/custom_btn4"
@@ -154,14 +154,14 @@
 
     <ImageView
         android:id="@+id/imageView36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:elevation="3sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/scan_btn3"
         app:layout_constraintEnd_toEndOf="@+id/scan_btn3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="@+id/scan_btn3"
         app:layout_constraintTop_toTopOf="@+id/scan_btn3"
         app:srcCompat="@drawable/scan_icon" />
@@ -182,14 +182,14 @@
 
     <ImageView
         android:id="@+id/imageView37"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:elevation="3sp"
         android:visibility="visible"
 
         app:layout_constraintBottom_toBottomOf="@+id/gallery_btn2"
         app:layout_constraintEnd_toEndOf="@+id/gallery_btn2"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="@+id/gallery_btn2"
         app:layout_constraintTop_toTopOf="@+id/gallery_btn2"
         app:srcCompat="@drawable/pick_gallery" />

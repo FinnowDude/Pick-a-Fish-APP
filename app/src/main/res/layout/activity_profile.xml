@@ -20,6 +20,7 @@
         app:srcCompat="@drawable/box_profile_blue_header" />
 
     <TextView
+
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +28,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:text="Profile"
         android:textColor="@color/white"
-        android:textSize="27sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
         app:layout_constraintHorizontal_bias="0.0"

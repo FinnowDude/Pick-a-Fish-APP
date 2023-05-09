@@ -1,6 +1,7 @@
 package com.example.pick_a_fish.Utiliy;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pick_a_fish.R;
+import com.example.pick_a_fish.information_activity;
 
 import java.util.ArrayList;
 
@@ -53,6 +55,9 @@ public class ModelRecyclerView extends RecyclerView.Adapter<ModelRecyclerView.Vi
             @Override
             public void onClick(View v) {
                 Toast.makeText(context,"LOREM IPSUM" + position, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, information_activity.class);
+                intent.putExtra("fishname",arrayList.get(position).getInfoName());
+                context.startActivity(intent);
             }
         });
 
