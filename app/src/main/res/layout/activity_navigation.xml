@@ -32,25 +32,14 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:elevation="3dp"
-        android:background="@color/lblue"
+        android:backgroundTint="@color/txtLblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.865"
-        app:srcCompat="@drawable/baseline_create_24" />
-
-    <ImageView
-        android:id="@+id/nav_img_bg"
-        android:layout_width="match_parent"
-        android:layout_height="615dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/layout_corners" />
+        app:srcCompat="@drawable/baseline_add_24" />
 
     <FrameLayout
 

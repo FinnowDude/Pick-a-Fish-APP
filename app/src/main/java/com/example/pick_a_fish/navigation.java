@@ -90,9 +90,6 @@ public class navigation extends AppCompatActivity {
         });
 
 
-        img_bg_nav = findViewById(R.id.nav_img_bg);
-
-
 
         //Add or Create a Post
 
@@ -132,7 +129,7 @@ public class navigation extends AppCompatActivity {
                         //Initialize Home Fragment
                         //Get id 1
 
-                        img_bg_nav.setImageResource(R.drawable.layout_corners);
+
                         nav_name.setText("Home");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new home_fragment();
@@ -140,7 +137,7 @@ public class navigation extends AppCompatActivity {
                     case 2:
                         //Initialize Information Fragment
                         //Get id 2
-                        img_bg_nav.setImageResource(R.drawable.layout_corners);
+
                         nav_name.setText("Fish Information");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new information_fragment();
@@ -149,7 +146,7 @@ public class navigation extends AppCompatActivity {
                         //Initialize Recipe Fragment
                         //Get id
 
-                        img_bg_nav.setImageResource(R.color.white);
+
                         nav_name.setText("Forum");
                         fab.setVisibility(View.VISIBLE);
                         fragment = new recipe_fragment();

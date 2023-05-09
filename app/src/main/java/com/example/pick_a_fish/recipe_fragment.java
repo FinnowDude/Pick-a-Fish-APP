@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pick_a_fish.Adapters.PostAdapter;
 import com.example.pick_a_fish.Modals.Post;
+import com.example.pick_a_fish.Utiliy.SpaceingItemsDecorator;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -51,12 +52,17 @@ public class recipe_fragment extends Fragment {
 
 
 
+
+
         // Inflate the layout for this fragment
         View fragmentView = inflater.inflate(R.layout.fragment_recipe_fragment, container, false);
         postRecyclerView = fragmentView.findViewById(R.id.postRV);
         postRecyclerView.setLayoutManager(new  LinearLayoutManager(getActivity()));
         postRecyclerView.setLayoutManager(lin);
         postRecyclerView.setHasFixedSize(true);
+        SpaceingItemsDecorator itemsDecorator = new SpaceingItemsDecorator(30);
+
+        postRecyclerView.addItemDecoration(itemsDecorator);
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("Posts");
 

@@ -9,62 +9,65 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/popup_user_image"
         android:layout_width="48dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/popup_description"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/popup_title"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
 
     <EditText
         android:id="@+id/popup_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/popup_edittext_style"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_box_shadow_design2"
         android:hint="Title"
+        android:paddingLeft="10dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/popup_user_image"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/popup_user_image" />
 
     <EditText
         android:id="@+id/popup_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/popup_edittext_style"
+        android:layout_width="325dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_box_shadow_design2"
         android:ems="10"
-        android:hint="Description"
+        android:hint="Write your description here"
         android:inputType="textPersonName"
+        android:paddingLeft="10dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/popup_title" />
 
     <ImageView
         android:id="@+id/popup_image"
-        android:layout_width="0dp"
+        android:layout_width="325dp"
         android:layout_height="225dp"
+        android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/popup_description"
-        app:srcCompat="@drawable/scenary" />
+        app:srcCompat="@drawable/addphoto" />
 
     <ImageView
         android:id="@+id/popup_add"
-        android:layout_width="56dp"
-        android:layout_height="50dp"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/circle_bg"
-        app:layout_constraintBottom_toBottomOf="@+id/popup_image"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/popup_image"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_create_24" />
 
     <ProgressBar
@@ -72,9 +75,40 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/popup_add"
         app:layout_constraintEnd_toEndOf="@+id/popup_add"
         app:layout_constraintStart_toStartOf="@+id/popup_add"
         app:layout_constraintTop_toTopOf="@+id/popup_add" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Create New Post"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:srcCompat="@drawable/line_grey" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/popup_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>
