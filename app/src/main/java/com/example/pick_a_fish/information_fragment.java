@@ -21,7 +21,6 @@ public class information_fragment extends Fragment {
     RecyclerView recyclerView;
 
     ArrayList<modelmodel> arrayList = new ArrayList<>();
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +47,7 @@ public class information_fragment extends Fragment {
         arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM7", "LOREM IPSUM7"));
         arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM8", "LOREM IPSUM8"));
         arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM9", "LOREM IPSUM9"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM10", "LOREM IPSUM10"));
 
 
         ModelRecyclerView modelRecyclerView = new ModelRecyclerView(getContext(), arrayList);
@@ -56,6 +56,5 @@ public class information_fragment extends Fragment {
 
         return view;
     }
-
 
 }

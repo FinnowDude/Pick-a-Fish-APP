@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".information_fragment">
+    tools:context=".information_fragment"
+    android:visibility="visible">
 
 
     <ImageView
@@ -20,11 +21,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleViewInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="2dp"
+        android:layout_marginTop="32dp"
         android:paddingTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

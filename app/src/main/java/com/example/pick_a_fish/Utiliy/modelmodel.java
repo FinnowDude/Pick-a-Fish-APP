@@ -39,5 +39,6 @@ public class modelmodel {
     public void setInfoDesc(String infoDesc) {
         this.infoDesc = infoDesc;
     }
+
 }
 
