@@ -31,9 +31,9 @@ import java.nio.ByteOrder;
 
 public class scan_camera extends AppCompatActivity {
 
-    Button scan_images, gallery_image;
-    ImageView scanned_image, img_info, img_back;
-    TextView result_txt, txt_SN, txt_CN, txt_EN, txt_ENVI, txt_DESC;
+    Button scan_images, gallery_image,scan_images2,gallery_image2;
+    ImageView scanned_image, img_info, img_back,scan_img,gal_img,scan_help_img;
+    TextView result_txt, txt_SN, txt_CN, txt_EN, txt_ENVI, txt_DESC,txt16,txt18,txt20,txt21;
     Dialog mDialog;
     int imageSize = 224;
 
@@ -48,6 +48,20 @@ public class scan_camera extends AppCompatActivity {
         result_txt = findViewById(R.id.resultTxt);
         img_info = findViewById(R.id.info_img);
         img_back = findViewById(R.id.back_img);
+
+        txt16 = findViewById(R.id.textView16);
+        txt18 = findViewById(R.id.textView18);
+        txt20 = findViewById(R.id.textView20);
+        txt21 = findViewById(R.id.textView21);
+
+        scan_images2 = findViewById(R.id.scan_btn3);
+        gallery_image2 = findViewById(R.id.gallery_btn2);
+
+        scan_help_img = findViewById(R.id.imageView34);
+        scan_img = findViewById(R.id.imageView36);
+        gal_img = findViewById(R.id.imageView37);
+
+
 
         //fish INFO CALL
 
@@ -105,6 +119,7 @@ public class scan_camera extends AppCompatActivity {
         });
 
 
+
         //Take photo - Camera Open
         scan_images.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,16 +128,38 @@ public class scan_camera extends AppCompatActivity {
                 if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, 3);
-                    scanned_image.setVisibility(View.VISIBLE);
+
 
                 } else {
                     requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
-                    scanned_image.setVisibility(View.INVISIBLE);
+
 
                 }
 
             }
         });
+
+        //Take photo - Camera Open
+        scan_images2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
+                    Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivityForResult(cameraIntent, 3);
+
+
+                } else {
+                    requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
+
+
+                }
+
+            }
+        });
+
+
+
 
         //Pick picture and open galley
 
@@ -131,12 +168,23 @@ public class scan_camera extends AppCompatActivity {
             public void onClick(View view) {
                 Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(cameraIntent, 1);
-                scanned_image.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        gallery_image2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(cameraIntent, 1);
+
             }
         });
 
 
     }
+
+
 
     public void classifyImage(Bitmap image) {
 
@@ -189,7 +237,24 @@ public class scan_camera extends AppCompatActivity {
             if (mxconfi >= 70) {
 
                 result_txt.setText(classes[maxPos]);
-                result_txt.setTextColor(Color.parseColor("#FFFFFF"));
+                result_txt.setTextColor(Color.parseColor("#007BB2"));
+                result_txt.setVisibility(View.VISIBLE);
+                txt16.setVisibility(View.VISIBLE);
+                txt18.setVisibility(View.VISIBLE);
+                txt20.setVisibility(View.VISIBLE);
+                txt21.setVisibility(View.VISIBLE);
+
+                scan_images2.setVisibility(View.INVISIBLE);
+                gallery_image2.setVisibility(View.INVISIBLE);
+
+                gal_img.setVisibility(View.INVISIBLE);
+                scan_img.setVisibility(View.INVISIBLE);
+                scan_help_img.setVisibility(View.INVISIBLE);
+
+                scan_images.setVisibility(View.VISIBLE);
+                gallery_image.setVisibility(View.VISIBLE);
+
+                scanned_image.setVisibility(View.VISIBLE);
 
                 if(result_txt.getText() == "Bangus"){
 
@@ -289,10 +354,27 @@ public class scan_camera extends AppCompatActivity {
                 result_txt.setTextColor(Color.parseColor("#DC2525"));
                 result_txt.setText("Couldn't Identify");
                 txt_CN.setText("");
-                txt_SN.setText("Scientific Name");
+                txt_SN.setText("");
                 txt_EN.setText("");
                 txt_ENVI.setText("");
                 txt_DESC.setText("");
+
+                txt16.setVisibility(View.INVISIBLE);
+                txt18.setVisibility(View.INVISIBLE);
+                txt20.setVisibility(View.INVISIBLE);
+                txt21.setVisibility(View.INVISIBLE);
+
+                scan_images2.setVisibility(View.INVISIBLE);
+                gallery_image2.setVisibility(View.INVISIBLE);
+
+                gal_img.setVisibility(View.INVISIBLE);
+                scan_img.setVisibility(View.INVISIBLE);
+                scan_help_img.setVisibility(View.INVISIBLE);
+
+                scan_images.setVisibility(View.VISIBLE);
+                gallery_image.setVisibility(View.VISIBLE);
+                result_txt.setVisibility(View.VISIBLE);
+                scanned_image.setVisibility(View.VISIBLE);
 
             }
 

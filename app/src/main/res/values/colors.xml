@@ -18,4 +18,5 @@
     <color name="colorAccentDemo">#665815</color>
     <color name="grey">#4E5355</color>
     <color name="red">#DC2525</color>
+    <color name="txtLblue">#007BB2</color>
 </resources>
