@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".information_activity"
+            android:exported="false" />
+        <activity
             android:name=".bug_report"
             android:exported="false" />
         <activity
