@@ -49,7 +49,7 @@ public class navigation extends AppCompatActivity {
     FirebaseAuth mAuth;
     Dialog popAddpost;
 
-    ImageView popupUserImage, popupPostImage,popupAddbtn,profile_img_home, img_bg_nav;
+    ImageView popupUserImage, popupPostImage,popupAddbtn,profile_img_home, navigation_img_change,nav_img_logo1;
     TextView popupTitle,popupDescription,nav_name;
     ProgressBar popupClickProgress;
 
@@ -70,8 +70,9 @@ public class navigation extends AppCompatActivity {
         //Assign Variable
         bottomNavigation = findViewById(R.id.navigation_bottom);
 
-
-
+        //Navigation ICON TOP LEFT and RIGHT
+        navigation_img_change = findViewById(R.id.nav_img_chg);
+        nav_img_logo1 = findViewById(R.id.nav_img_logo);
         //Check internet Connection
 
 
@@ -128,8 +129,9 @@ public class navigation extends AppCompatActivity {
                     case 1:
                         //Initialize Home Fragment
                         //Get id 1
-
-
+                        nav_img_logo1.setVisibility(View.INVISIBLE);
+                        navigation_img_change.setImageResource(R.drawable.baseline_home_24);
+                        navigation_img_change.setVisibility(View.VISIBLE);
                         nav_name.setText("Home");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new home_fragment();
@@ -137,7 +139,9 @@ public class navigation extends AppCompatActivity {
                     case 2:
                         //Initialize Information Fragment
                         //Get id 2
-
+                        nav_img_logo1.setVisibility(View.INVISIBLE);
+                        navigation_img_change.setImageResource(R.drawable.baseline_info_24);
+                        navigation_img_change.setVisibility(View.VISIBLE);
                         nav_name.setText("Fish Information");
                         fab.setVisibility(View.INVISIBLE);
                         fragment = new information_fragment();
@@ -145,9 +149,9 @@ public class navigation extends AppCompatActivity {
                     case 3:
                         //Initialize Recipe Fragment
                         //Get id
-
-
-                        nav_name.setText("Forum");
+                        nav_img_logo1.setVisibility(View.VISIBLE);
+                        navigation_img_change.setVisibility(View.INVISIBLE);
+                        nav_name.setText("");
                         fab.setVisibility(View.VISIBLE);
                         fragment = new recipe_fragment();
                         break;
