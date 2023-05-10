@@ -54,7 +54,6 @@ public class ModelRecyclerView extends RecyclerView.Adapter<ModelRecyclerView.Vi
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,"LOREM IPSUM" + position, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, information_activity.class);
                 intent.putExtra("fishname",arrayList.get(position).getInfoName());
                 context.startActivity(intent);

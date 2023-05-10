@@ -38,16 +38,17 @@ public class information_fragment extends Fragment {
 
 
 
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM", "LOREM IPSUM"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM2", "LOREM IPSUM2"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM3", "LOREM IPSUM3"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM4", "LOREM IPSUM4"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM5", "LOREM IPSUM5"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM6", "LOREM IPSUM6"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM7", "LOREM IPSUM7"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM8", "LOREM IPSUM8"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM9", "LOREM IPSUM9"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "LOREM IPSUM10", "LOREM IPSUM10"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Bangus", "Milk Fish"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Bolinao", "Anchovies"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Dalagang Bukid", "Yellow Tail fusilier"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Galunggong", "Blue Mackerel Scad"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Hasa hasa", "Short Mackerel"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Maya maya", "Whole red snapper"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Sapsap", "Slipmouth fish"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Tamban", "Herring or Sardine"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Tilapia", "St. Peter's fish"));
+        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Tulingan", "Mackerel Tuna"));
+
 
 
         ModelRecyclerView modelRecyclerView = new ModelRecyclerView(getContext(), arrayList);

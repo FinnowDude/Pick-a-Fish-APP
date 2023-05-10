@@ -227,7 +227,7 @@ public class scan_camera extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Bangus", "Bolinao", "Dalagang Bukid", "Galunggong", "Hasa hasa", "Maya maya", "Sapsap", "Tamban", "Tilapia", "Tulingan","Unknown"};
+            String[] classes = {"Bangus", "Bolinao", "Dalagang Bukid", "Galunggong", "Hasa hasa", "Maya maya", "Sapsap", "Tamban", "Tilapia", "Tulingan"};
 
 
             float mxconfi = 0;
