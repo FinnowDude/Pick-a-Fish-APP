@@ -13,8 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
-        android:usesCleartextTraffic="true"
-        >
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".fish_study"
+            android:exported="false" />
+        <activity
+            android:name=".breakups"
+            android:exported="false" />
+        <activity
+            android:name=".intelligence"
+            android:exported="false" />
         <activity
             android:name=".information_activity"
             android:exported="false" />
@@ -53,10 +61,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:windowSoftInputMode="adjustPan"
             android:name=".navigation"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".onboarding"
             android:exported="false"

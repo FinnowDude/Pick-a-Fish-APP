@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".breakups">
+
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/intel_two" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/box_square" />
+
+        <ImageView
+            android:id="@+id/imageView46"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView45"
+            app:srcCompat="@drawable/link_img" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Breakups really suck, even if you’re a fish"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView45" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Written by"
+            android:textColor="@color/grey"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Sigal Samuel"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <ImageView
+            android:id="@+id/imageView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:srcCompat="@drawable/line_grey"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/grey"
+            android:text="Most people think of fish as somehow lesser than pigs, cows, chickens and other land animals."
+            android:textSize="18dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView47" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="A recent study shows that fish are more emotionally complex than we give them credit for. Scientists at the University of Burgundy in France studied one called the convict cichlid, a monogamous fish species that forms long-lasting pairs. They found that when female cichlids lose their chosen mates, they become glum and more pessimistic about the world.\n\nIt turns out emotional attachment to a partner is not unique to humans or even to mammals. Breakups really suck, even if you’re a fish.\n\nThe scientists started by giving females a chance to express a preference between two males. In a tank partitioned into three compartments, the female fish was put in the middle, and a male was put on either side of her. After seeing, hearing, and — let’s be real — judging them through the mesh partitions, she huddled up close to the one she liked best.\n\nBut the scientists didn’t allow all the female fish to stay with their chosen mates. In some cases, the researchers split them up and paired the females with the males they’d rejected. They found that these unfortunately paired fish couples were slower to spawn than the others.\n\nNow, the scientists switched gears. They exposed the female fish to little clay boxes in the tank. Boxes with white lids contained food (one yummy larva, to be exact), while boxes with black lids contained nothing. The fish learned that with some effort, they could suck or push off the lids, and they gradually figured out that a white lid means there’ll be a treat inside.\n\nHere’s the tricky bit: The scientists then introduced a third kind of box, this one with a grey lid. They wanted to see how the female fish would respond to an ambiguous signal — halfway between white and black — and whether the response would correlate with whether the fish had gotten to stay with her chosen mate or had been separated from him and paired with the reject instead."
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Read more : "
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="30dp"
+            android:text="https://www.vox.com/future-perfect/2019/7/20/20700775/fish-pain-love-emotion-animal-cognition-study"
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fish_study">
+
+
+        <ImageView
+            android:id="@+id/imageView49"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/intel_three" />
+
+        <ImageView
+            android:id="@+id/imageView50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/box_square" />
+
+        <ImageView
+            android:id="@+id/imageView51"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView50"
+            app:srcCompat="@drawable/link_img" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Fish can recognize human faces, study shows"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView50" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Written by"
+            android:textColor="@color/grey"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="University of Oxford"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <ImageView
+            android:id="@+id/imageView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:srcCompat="@drawable/line_grey"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/grey"
+            android:text="A species of tropical fish has been shown to be able to distinguish between human faces. It is the first time fish have demonstrated this ability."
+            android:textSize="18dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView47" />
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="The research, carried out by a team of scientists from the University of Oxford (UK) and the University of Queensland (Australia), found that archerfish were able to learn and recognize faces with a high degree of accuracy -- an impressive feat, given this task requires sophisticated visual recognition capabilities.\n\nFirst author Dr Cait Newport, Marie Curie Research Fellow in the Department of Zoology at Oxford University, said:\n\n'Being able to distinguish between a large number of human faces is a surprisingly difficult task, mainly due to the fact that all human faces share the same basic features. All faces have two eyes above a nose and mouth, therefore to tell people apart we must be able to identify subtle differences in their features. If you consider the similarities in appearance between some family members, this task can be very difficult indeed.\n\n'It has been hypothesized that this task is so difficult that it can only be accomplished by primates, which have a large and complex brain. The fact that the human brain has a specialized region used for recognizing human faces suggests that there may be something special about faces themselves. To test this idea, we wanted to determine if another animal with a smaller and simpler brain, and with no evolutionary need to recognize human faces, was still able to do so.'\n\nThe researchers found that fish, which lack the sophisticated visual cortex of primates, are nevertheless capable of discriminating one face from up to 44 new faces. The research provides evidence that fish (vertebrates lacking a major part of the brain called the neocortex) have impressive visual discrimination abilities."
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Read more : "
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="30dp"
+            android:text="https://www.sciencedaily.com/releases/2016/06/160607080356.htm"
+            android:textColor="@color/grey"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
