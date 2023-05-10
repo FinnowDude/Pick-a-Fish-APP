@@ -4,6 +4,7 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,7 @@ public class breakups extends AppCompatActivity {
         setContentView(R.layout.activity_breakups);
 
         textView36 = findViewById(R.id.textView36);
+        textView36.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
         textView36.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

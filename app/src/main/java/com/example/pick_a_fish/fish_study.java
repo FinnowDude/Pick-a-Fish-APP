@@ -4,6 +4,7 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -38,6 +39,7 @@ public class fish_study extends AppCompatActivity {
         });
 
         textView37 = findViewById(R.id.textView37);
+        textView37.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
         textView37.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
