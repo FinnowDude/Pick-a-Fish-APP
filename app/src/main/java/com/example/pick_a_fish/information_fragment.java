@@ -38,16 +38,16 @@ public class information_fragment extends Fragment {
 
 
 
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Bangus", "Milk Fish"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Bolinao", "Anchovies"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Dalagang Bukid", "Yellow Tail fusilier"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Galunggong", "Blue Mackerel Scad"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Hasa hasa", "Short Mackerel"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Maya maya", "Whole red snapper"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Sapsap", "Slipmouth fish"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Tamban", "Herring or Sardine"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Tilapia", "St. Peter's fish"));
-        arrayList.add(new modelmodel(R.drawable.place_holder_rt, "Tulingan", "Mackerel Tuna"));
+        arrayList.add(new modelmodel(R.drawable.banugs_six, "Bangus", "Milk Fish"));
+        arrayList.add(new modelmodel(R.drawable.ancho_one, "Bolinao", "Anchovies"));
+        arrayList.add(new modelmodel(R.drawable.dalaga_one, "Dalagang Bukid", "Yellow Tail fusilier"));
+        arrayList.add(new modelmodel(R.drawable.galung_one, "Galunggong", "Blue Mackerel Scad"));
+        arrayList.add(new modelmodel(R.drawable.hasa_one, "Hasa hasa", "Short Mackerel"));
+        arrayList.add(new modelmodel(R.drawable.maya_one, "Maya maya", "Whole red snapper"));
+        arrayList.add(new modelmodel(R.drawable.sap_oneone, "Sapsap", "Slipmouth fish"));
+        arrayList.add(new modelmodel(R.drawable.tamban_one, "Tamban", "Herring or Sardine"));
+        arrayList.add(new modelmodel(R.drawable.tilapia_oneone, "Tilapia", "St. Peter's fish"));
+        arrayList.add(new modelmodel(R.drawable.tulingan_two, "Tulingan", "Mackerel Tuna"));
 
 
 

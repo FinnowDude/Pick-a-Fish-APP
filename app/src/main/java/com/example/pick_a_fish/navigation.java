@@ -178,6 +178,16 @@ public class navigation extends AppCompatActivity {
             }
         });
 
+        bottomNavigation.setOnReselectListener(new MeowBottomNavigation.ReselectListener() {
+            @Override
+            public void onReselectItem(MeowBottomNavigation.Model item) {
+
+            }
+        });
+
+
+
+
 
 
 

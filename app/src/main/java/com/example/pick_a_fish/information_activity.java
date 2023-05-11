@@ -53,8 +53,10 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.banugs_five, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.banugs_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.banugs_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.banugs_four,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Bolinao")) {
@@ -68,8 +70,11 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.logo_whale, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.logo_whale,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.ancho_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.ancho_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.ancho_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.ancho_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.ancho_five,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Dalagang Bukid")) {
@@ -84,8 +89,10 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.dalaga_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.dalaga_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.dalaga_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.dalaga_four,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Galunggong")) {
@@ -102,8 +109,10 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.galung_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.galung_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.galung_two, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.galung_five, ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Hasa hasa")) {
@@ -119,8 +128,11 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.hasa_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.hasa_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.hasa_three, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.hasa_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.hasa_five, ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Maya maya")) {
@@ -135,8 +147,11 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.maya_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.maya_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.maya_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.maya_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.maya_five,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Sapsap")) {
@@ -152,8 +167,13 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.sap_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.sap_five,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.sap_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.sap_three,ScaleTypes.CENTER_CROP));
+
+
+
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Tamban")) {
@@ -170,8 +190,11 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tamban_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tamban_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tamban_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tamban_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tamban_five,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Tilapia")) {
@@ -188,8 +211,11 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tilapia_one, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tilapia_two,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tilapia_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tilapia_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tilapia_five,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
         else if (fishname.equals("Tulingan")) {
@@ -204,8 +230,11 @@ public class information_activity extends AppCompatActivity {
             //Image Slider
             imageSlider = findViewById(R.id.imgSlider);
             List<SlideModel> slideModels = new ArrayList<>();
-            slideModels.add(new SlideModel(R.drawable.bang, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.download,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tulingan_two, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tulingan_one,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tulingan_three,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tulingan_four,ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.tulingan_five,ScaleTypes.CENTER_CROP));
             imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
         }
 
