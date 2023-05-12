@@ -56,6 +56,7 @@ public class suggestfish extends AppCompatActivity {
         imgGallery = findViewById(R.id.imageView11);
         imgView = findViewById(R.id.imageView3);
         btnUpload = findViewById(R.id.btnUpload);
+        txtfFishes = findViewById(R.id.txtfUpload);
 
 
 
